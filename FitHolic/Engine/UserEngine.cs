@@ -25,11 +25,11 @@ namespace FitHolic
         }
         public bool Login(User user)
         {
-            var localUser = _repository.GetUser(user.Email);
+            //var localUser = _repository.GetUser(user.Email);
 
-            if (localUser != null && localUser.Password == user.Password) return true;
+            //if (localUser != null && localUser.Password == user.Password) return true;
 
-            return false;
+            //return false;
         }
 
         public User GetUser(string UserId)
