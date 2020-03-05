@@ -48,9 +48,9 @@ namespace FitHolic.Controllers
         [System.Web.Http.AcceptVerbs("Get", "Post", "Put")]
         [System.Web.Http.HttpPost]
         public HttpResponseMessage Login(User user)
-        { 
+        {
             var loggedInSuccessfully = _engine.Login(user);
-            if(loggedInSuccessfully) Request.CreateResponse(HttpStatusCode.OK);
+            if (loggedInSuccessfully) Request.CreateResponse(HttpStatusCode.OK);
 
             return Request.CreateResponse(HttpStatusCode.NotFound, "Please register first");
         }

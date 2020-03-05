@@ -34,12 +34,12 @@ namespace FitHolic
 
         public User GetUser(string UserId)
         {
-            var user = _repository.GetUser(UserId);
-            if(user==null)
-            {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            return user;
+            //var user = _repository.GetUser(UserId);
+            //if(user==null)
+            //{
+            //    throw new HttpResponseException(HttpStatusCode.NotFound);
+            //}
+            //return user;
         }
         public IEnumerable<User> GetUsers()
         {
