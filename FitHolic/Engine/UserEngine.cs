@@ -16,12 +16,12 @@ namespace FitHolic
         }
         public bool RegisterUser(User user)
         {
-            //var userLocal = _repository.GetUser(user.Email);
+            var userLocal = _repository.GetUser(user.Email);
 
-            //if (userLocal != null) return false;
+            if (userLocal != null) return false;
 
-            //_repository.Add(user);
-            //return true;
+            _repository.Add(user);
+            return true;
         }
         public bool Login(User user)
         {
